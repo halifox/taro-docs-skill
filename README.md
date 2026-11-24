@@ -20,16 +20,16 @@ fi
 
 ### 从公开 GitHub 仓库安装
 
-仓库公开发布后，把命令中的 `OWNER` 替换为实际 GitHub 用户名或组织名。以下命令使用 Vercel 的 `skills` CLI。
+以下命令使用 Vercel 的 `skills` CLI 从 GitHub 安装。
 
 ```bash
-npx skills add OWNER/taro-docs-skill --skill taro-docs --agent codex --global
+npx skills add halifox/taro-docs-skill --skill taro-docs --agent codex --global
 ```
 
 也可在 Codex 中通过内置 Skill 安装器安装。
 
 ```text
-$skill-installer install https://github.com/OWNER/taro-docs-skill/tree/main/skills/taro-docs
+$skill-installer install https://github.com/halifox/taro-docs-skill/tree/main/skills/taro-docs
 ```
 
 ## 使用
