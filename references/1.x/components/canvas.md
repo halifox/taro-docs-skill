@@ -1,0 +1,33 @@
+# Canvas
+
+[原始页面](https://taro-docs-7g1t02tzaeb163c4-1252004765.tcloudbaseapp.com/docs/1.x/components/canvas/)
+
+<a id="画布"></a>
+
+## 画布
+
+`<Canvas />` 组件的 RN 版本尚未实现。
+
+> 小程序端参数支持详见各小程序官网
+
+[微信小程序 Canvas](https://developers.weixin.qq.com/miniprogram/dev/component/canvas.html)。
+
+[百度小程序 Canvas](https://smartprogram.baidu.com/docs/develop/component/canvas/#canvas)。
+
+[支付宝小程序 Canvas](https://docs.alipay.com/mini/component/canvas)。
+
+[抖音小程序 Canvas](https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/api/canvas/v2/Canvas/Canvas)。
+
+```jsx
+import Taro, { Component } from '@tarojs/taro'
+// 引入 Canvas 组件
+import { Canvas } from '@tarojs/components'
+
+class App extends Components {
+  render () {
+    return (
+      <Canvas style='width: 300px; height: 200px;' canvasId='canvas' />
+    )
+  }
+}
+```

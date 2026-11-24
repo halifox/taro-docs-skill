@@ -1,0 +1,23 @@
+# Taro.getCurrentPages(OBJECT)
+
+[原始页面](https://taro-docs-7g1t02tzaeb163c4-1252004765.tcloudbaseapp.com/docs/1.x/apis/interface/navigation/getCurrentPages)
+
+使用方式同 [`getCurrentPages`](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/route.html#getcurrentpages)， 获取当前的页面栈，决定需要返回几层。
+
+<a id="示例代码"></a>
+
+## 示例代码
+
+```jsx
+import Taro from '@tarojs/taro'
+
+Taro.getCurrentPages().length
+```
+
+<a id="api支持度"></a>
+
+## API支持度
+
+| API | 微信小程序 | H5 | React Native |
+| --- | --- | --- | --- |
+| Taro.getCurrentPages | ✔️ |  | ✔️ |

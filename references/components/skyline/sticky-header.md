@@ -1,0 +1,37 @@
+# StickyHeader
+
+[原始页面](https://taro-docs-7g1t02tzaeb163c4-1252004765.tcloudbaseapp.com/docs/components/skyline/sticky-header)
+
+吸顶布局容器，仅支持作为 scroll-view 自定义模式下的直接子节点或 sticky-section 组件直接子节点。仅 Skyline 支持。
+
+支持情况：微信小程序 H5 React Native Harmony
+
+> [参考文档](https://developers.weixin.qq.com/miniprogram/dev/component/sticky-header.html)
+
+<a id="类型"></a>
+
+## 类型
+
+```tsx
+ComponentType<StickyHeaderProps>
+```
+
+<a id="stickyheaderprops"></a>
+
+## StickyHeaderProps
+
+| 参数 | 类型 | 默认值 | 必填 | 说明 |
+| --- | --- | --- | --- | --- |
+| offsetTop | `number` | `0` | 否 | 吸顶时与顶部的距(px) |
+| padding | `[number, number, number, number]` | `[0, 0, 0, 0]` | 否 | 长度为 4 的数组，按 top、right、bottom、left 顺序指定内边距 |
+| onStickOnTopChange | `CommonEventFunction` |  | 否 | 吸顶状态变化事件，仅支持非 worklet 的组件方法作为回调。event.detail = { isStickOnTop }，当 sticky-header 吸顶时为 true，否则为 false。<br>version: >=3.6.2 |
+
+<a id="api-支持度"></a>
+
+### API 支持度
+
+| API | 微信小程序 | H5 | React Native | Harmony |
+| --- | --- | --- | --- | --- |
+| StickyHeaderProps.offsetTop | ✔️ |  |  |  |
+| StickyHeaderProps.padding | ✔️ |  |  |  |
+| StickyHeaderProps.onStickOnTopChange | ✔️ |  |  |  |
